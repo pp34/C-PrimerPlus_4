@@ -1,7 +1,7 @@
 #include "main.h"
 
 
-#define tellmetype(o)   std::cout<<#o<<"\t: "<<typeid(o).name()<<std::endl;
+#define tellmetype(o)   std::cout<<#o<<"\t: "<<type_name<decltype(o)>()<<std::endl;
 //  #o output its name;
 //   o output its value;
 
@@ -18,6 +18,8 @@ int main(){
     tellmetype( p );
     tellmetype( j2 );
     tellmetype( k2 );
+
+    //decltype( k2 ) dk;
 
     return 0;
 }

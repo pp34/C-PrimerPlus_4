@@ -149,11 +149,13 @@
     <ClCompile Include="3_7_3.cpp" />
     <ClCompile Include="4_13.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="typename.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="3_7_3.h" />
     <ClInclude Include="4_13.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="typename.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
