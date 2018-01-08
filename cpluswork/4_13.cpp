@@ -40,16 +40,22 @@ void f4_12_13(){
     std::cin >> lenth;
 
     int *p = new int[ lenth ];
+    int *psta = p;
     tmp = lenth;
     while ( tmp-- )
     {   
-        //int *p = new int( 0 );
+        
         std::cout << "Please input the number of array: _\b";
         std::cin >> ( *(p++) );
     }
-    p -= 1;
+    //p -= 1;
     for ( int i = 0; i < lenth; i++ )
-        std::cout << *( p - lenth+i+1 ) << std::endl;
+        std::cout << *( psta + i ) << std::endl;
 
-    delete p;
+    p -= lenth;
+    delete[] p;
+    std::cout << "delete[] p" << std::endl;
+
+    //delete psta;
+    std::cout << "No need to delete psta" << std::endl;
 }
