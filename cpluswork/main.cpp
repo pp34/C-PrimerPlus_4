@@ -1,25 +1,34 @@
 #include "main.h"
 
 
+typedef char *pstring;
 
 int main(){
 
-    const int v2( 0 );           //  top-level const 
-    const int i(1);              //  top-level const 
-    int v1 = v2;                 //  top-level const assigned to non-const is legal
-    int *p1 = &v1, &r1 = v1;    //  non-const
-    const int *p2 = &v2, *const p3 = &i, &r2 = v2;
-    //  low-level const p2, top&low-level const p3, refence always is top-level const.
+    int i = 0, &r = i;
+    auto a = r;                     //  a int value
+    const int ci = i, &cr = ci;    //  ci top-level constant int value, cr constant int reference.
+    auto b = ci;                    //  b int value(ignore ci's top-level constant).
+    auto c = cr;                    //  c int value(ignore ci's top-level constant).
+    auto d = &i;                    //  d int pointer(pointer to int value).
+    auto e = &ci;                   //  e pointer to constant int value.
+
+    const auto f = ci;
+
+    auto &g = ci;
+    //auto &h = 42;     reference 
+    const auto &j = 42;
+
+    auto k = ci, &l = i;
+    auto &m = ci, *p = &ci;
+
+    a = 42;
+    b = 42;
+    c = 42;
+    //d = 42;
+    //e = 42;
+    //g = 42;
 
 
-    r1 = v2;    //  top-level const assigned to non-const.
-    //p1 = p2;      low-level const pointer has to pointer to const, but p1 is not.
-    p2 = p1;    //  non-const pointer assigned its addr to low-level const pointer, legal.
-    //p1 = p3;      top&low-level const pointer assigned its addr to non-const pointer, illegal.
-    p2 = p3;    //  top&low-level const pointer assigned its addr to low-level const pointer, legal.
-
-
-    std::cout << *p2 << std::endl;
-    //f4_12_13();
     return 0;
 }
