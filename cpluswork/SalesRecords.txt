@@ -1,0 +1,2 @@
+ISBN:pp34	total:123456	sellout:44	price:98
+ISBN:rd257	total:654321	sellout:55	price:89

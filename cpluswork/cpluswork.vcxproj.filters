@@ -27,6 +27,12 @@
     <ClCompile Include="typename.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="sales_data.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="salesrecord.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -41,5 +47,16 @@
     <ClInclude Include="typename.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="sales_data.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="salesrecord.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="SalesRecords.txt">
+      <Filter>资源文件</Filter>
+    </Text>
   </ItemGroup>
 </Project>
