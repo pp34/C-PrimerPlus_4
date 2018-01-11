@@ -12,6 +12,8 @@ typedef struct{
     double price{ 0.0 };
 }sales_data;
 
+extern sales_data item[ 20 ];
+
 std::string getIsbn( sales_data item );
 unsigned int getTotoal( sales_data item );
 unsigned int getSellout( sales_data item );
@@ -25,6 +27,8 @@ void showIsbn( sales_data item );
 void showTotal( sales_data item );
 void showSellout( sales_data item );
 void showPrice( sales_data item );
+
+unsigned int str2uint( std::string str );
 
 #endif
 

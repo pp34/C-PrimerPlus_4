@@ -6,8 +6,16 @@
 #include<fstream>
 #include "sales_data.h"
 
-sales_data* readRecord();
+void readRecord( std::fstream &fin );
+
 bool ifisbn( char tmp[] );
+
+void skipTitle( std::fstream &fin );
+std::string getId( std::fstream &fin );
+std::string getTotal( std::fstream &fin );
+std::string getPrice( std::fstream &fin );
+std::string getSellout( std::fstream &fin );
+
 
 #endif
 
