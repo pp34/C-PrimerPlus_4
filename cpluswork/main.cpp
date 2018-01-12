@@ -4,20 +4,17 @@
 //  #o output its name;
 //   o output its value;
 
+
 int main(){
-    
-    //std::fstream fin;
-    //fin.open( "SalesRecords.txt", std::ios::in );
-    //readRecord( fin );
-    //fin.close();
+
     sales_data *list = nullptr;
-    list = creatNode( list );
+    std::fstream fin;
+
+    fin.open( "SalesRecords.txt", std::ios::in );
+    list = readRecord( fin, list );
+    fin.close();
+    
     showNode( list );
-    list = creatNode( list );
-    showNode( list );
-    list = creatNode( list );
-    showNode( list );
-    list = creatNode( list );
-    showNode( list );
+
     return 0;
 }

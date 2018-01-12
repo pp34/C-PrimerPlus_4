@@ -4,9 +4,10 @@
 #include<iostream>
 #include<string>
 #include "sales_data.h"
+#include "sales_record.h"
 
-
-sales_data* creatNode( sales_data *node_head );
+sales_data* creatNode( sales_data *node_head, std::string str, unsigned int total,
+    unsigned int sellout, double price );
 void showNode( sales_data *node_head );
 
 #endif

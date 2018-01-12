@@ -1,40 +1,45 @@
 #include "sales_record.h"
 
-void readRecord( std::fstream &fin ){
+sales_data* readRecord( std::fstream &fin , sales_data *list ){
+
     int i{0};
-    unsigned int num[3]{ 0 };
-    std::string tmp; 
+
+    std::string tmp, isbn;
+    unsigned int total{ 0 }, sellout{ 0 };
+    double price{ 0.0 };
+
     sales_data *item=nullptr;
+
     skipTitle( fin );
     for ( i = 0; i < 20; i++ )
     {
         tmp = getId( fin );
-        item->isbn = tmp;
+        isbn = tmp;
         std::cout << tmp;
         std::cout << '\n';
 
         tmp = getTotal( fin );
-        item->totoal = str2uint(tmp);
+        total = str2uint(tmp);
         std::cout << tmp;
         std::cout << '\t';
-        std::cout << item->totoal << std::endl;
+       // std::cout << total << std::endl;
 
         tmp = getSellout( fin );
-        item->sellout = str2uint( tmp );
+        sellout = str2uint( tmp );
         std::cout << tmp;
         std::cout << '\t';
-        std::cout << item->sellout << std::endl;
+       // std::cout << sellout << std::endl;
 
         tmp = getPrice( fin );
-        item->price = str2double( tmp );
+        price = str2double( tmp );
         std::cout << tmp;
-        std::cout << '\t';
-        std::cout << item->price << std::endl;
+       // std::cout << '\t';
+       // std::cout << price << std::endl;
 
         std::cout << '\n';
-        
+        list = creatNode( list , isbn , total , sellout , price );
     }
-    //std::cout << num << std::endl;
+    return list;
 }
 
 std::string getPrice( std::fstream &fin ){

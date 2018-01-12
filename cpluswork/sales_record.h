@@ -6,8 +6,9 @@
 #include<fstream>
 #include<sstream>
 #include "sales_data.h"
+#include "sales_data_chain.h"
 
-void readRecord( std::fstream &fin );
+sales_data* readRecord( std::fstream &fin, sales_data *list );
 
 bool ifisbn( char tmp[] );
 

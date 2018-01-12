@@ -1,8 +1,8 @@
 #include "sales_data_chain.h"
-#include "sales_data_chain.h"
 
 
-sales_data* creatNode( sales_data *node_head ){
+sales_data* creatNode( sales_data *node_head, std::string str, unsigned int total,
+                       unsigned int sellout, double price){
 
     int cnt{ 0 };
     sales_data *ptmp = nullptr, *itemptr=nullptr;
@@ -14,10 +14,10 @@ sales_data* creatNode( sales_data *node_head ){
         ptmp = new sales_data;
         
         //  init a node & config its value.
-        setIsbn( ptmp, "pp34");
-        setTotoal( ptmp, 10086 );
-        setSellout( ptmp, 10010 );
-        setPrice( ptmp, 95.27 );
+        setIsbn( ptmp, str );
+        setTotoal( ptmp, total );
+        setSellout( ptmp, sellout );
+        setPrice( ptmp, price );
         setNum( ptmp, 1 );
         ptmp->next = nullptr;
         node_head = ptmp;
@@ -28,16 +28,16 @@ sales_data* creatNode( sales_data *node_head ){
             itemptr = ptmp;
             ptmp = ptmp->next;
             cnt++;
-            std::cout << cnt << std::endl;
+           // std::cout << cnt << std::endl;
         }
         //  init a node & config its value.
         ptmp = new sales_data;
         itemptr->next = ptmp;
         //  init a node & config its value
-        setIsbn( ptmp, "RD257");
-        setTotoal( ptmp, 586 );
-        setSellout( ptmp, 10000 );
-        setPrice( ptmp, 95.27 );
+        setIsbn( ptmp, str );
+        setTotoal( ptmp, total );
+        setSellout( ptmp, sellout );
+        setPrice( ptmp, price );
         setNum( ptmp, cnt + 1 );
         //  the next point to null.
         ptmp->next = nullptr;
