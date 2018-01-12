@@ -30,7 +30,10 @@
     <ClCompile Include="sales_data.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="salesrecord.cpp">
+    <ClCompile Include="sales_data_chain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sales_record.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -50,7 +53,10 @@
     <ClInclude Include="sales_data.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="salesrecord.h">
+    <ClInclude Include="sales_data_chain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sales_record.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

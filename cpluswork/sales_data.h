@@ -5,13 +5,14 @@
 #include<string>
 #include<sstream>
 
-typedef struct{
+struct sales_data{          // In Cpp typedef is noneed in here.
 
     std::string isbn;
     unsigned int totoal{ 0 };
     unsigned int sellout{ 0 };
     double price{ 0.0 };
-}sales_data;
+    struct sales_data *next;
+};
 
 extern sales_data item[ 20 ];
 
