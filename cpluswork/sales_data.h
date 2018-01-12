@@ -3,6 +3,7 @@
 
 #include<iostream>
 #include<string>
+#include<sstream>
 
 typedef struct{
 
@@ -29,6 +30,7 @@ void showSellout( sales_data item );
 void showPrice( sales_data item );
 
 unsigned int str2uint( std::string str );
+double str2double( std::string str );
 
 #endif
 

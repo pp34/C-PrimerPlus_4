@@ -29,23 +29,15 @@ void showPrice( sales_data item ){
 }
 
 unsigned int str2uint( std::string str ){
+    std::istringstream tmpstr{ str };
+    unsigned int result{ 0 };
+    tmpstr >> result;
+    return result;
+}
 
-    unsigned int  i{ 0 },tmp{ 0 }, result{ 0 };
-    int ten{ 0 };
-    ten = str.size()-1;
-    for ( i = 0; i < ten+1; i++ )
-    {
-        if ( isdigit( str[ i ] ) )
-        {
-            tmp = ( str[ i ] - '0' );
-
-        }
-        if ( i == (ten) ) { 
-            result += tmp;
-        }
-        else {
-            result += tmp*10*( ten - i );
-        }
-    }
+double str2double( std::string str ){
+    std::istringstream tmpstr{ str };
+    double result{0.0};
+    tmpstr >> result;
     return result;
 }

@@ -4,6 +4,7 @@
 #include<iostream>
 #include<string>
 #include<fstream>
+#include<sstream>
 #include "sales_data.h"
 
 void readRecord( std::fstream &fin );

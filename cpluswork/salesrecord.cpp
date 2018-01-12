@@ -14,23 +14,22 @@ void readRecord( std::fstream &fin ){
         std::cout << '\n';
 
         tmp = getTotal( fin );
-        item->isbn = tmp;
+        item->totoal = str2uint(tmp);
         std::cout << tmp;
         std::cout << '\t';
-        num[0] = str2uint( item->isbn );
-        std::cout << num[ 0 ] << std::endl;
+        std::cout << item->totoal << std::endl;
 
         tmp = getSellout( fin );
+        item->sellout = str2uint( tmp );
         std::cout << tmp;
         std::cout << '\t';
-        num[ 1 ] = str2uint( tmp );
-        std::cout << num[ 1 ] << std::endl;
+        std::cout << item->sellout << std::endl;
 
         tmp = getPrice( fin );
+        item->price = str2double( tmp );
         std::cout << tmp;
         std::cout << '\t';
-        num[ 2 ] = str2uint( tmp );
-        std::cout << num[ 2 ] << std::endl;
+        std::cout << item->price << std::endl;
 
         std::cout << '\n';
         

@@ -8,9 +8,7 @@ int main(){
     
     std::fstream fin;
     fin.open( "SalesRecords.txt", std::ios::in );
-
     readRecord( fin );
-
     fin.close();
 
     return 0;
