@@ -1,3 +1,10 @@
-﻿  main.cpp
+﻿  sales_data_chain.cpp
+  正在生成代码...
+f:\github\c-primerplus_4\cpluswork\sales_data_chain.cpp(101): warning C4715: “findNode”: 不是所有的控件路径都返回值
+f:\github\c-primerplus_4\cpluswork\sales_data_chain.cpp(131): warning C4715: “findNode”: 不是所有的控件路径都返回值
+f:\github\c-primerplus_4\cpluswork\sales_data_chain.cpp(72): warning C4715: “findNode”: 不是所有的控件路径都返回值
+  正在跳过...(未检测到相关更改)
+  4_13.cpp
+  3_7_3.cpp
   cpluswork.vcxproj -> F:\Github\C-PrimerPlus_4\x64\Debug\cpluswork.exe
   cpluswork.vcxproj -> F:\Github\C-PrimerPlus_4\x64\Debug\cpluswork.pdb (Full PDB)

@@ -8,7 +8,9 @@
 int main(){
 
     int i{ 0 };
+    std::string isbn;
     sales_data *list = nullptr;
+    sales_data *fptr = nullptr;
     std::fstream fin;
 
     fin.open( "SalesRecords.txt", std::ios::in );
@@ -16,10 +18,29 @@ int main(){
     fin.close();
     
     showNode( list );
-    for ( i = 2; i < 20; i += 2 )
+    do
     {
-        list = removeNode( list, i );
-    }
+        std::cout << "which num U wanna find out? _\b";
+        std::cin >> i;
+        fptr = findNode( list, i );
+    } while ( i );
     showNode( list );
+    do
+    {
+        std::cout << "which ISBN U wanna find out? _\b";
+        std::cin >> isbn;
+        fptr = findNode( list, isbn );
+    } while ( isbn!="ok" );
+    do
+    {
+        std::cout << "which num U wanna move out? _\b";
+        std::cin >> i;
+        list = removeNode( list, i );
+        showNode( list );
+    } while ( i );
+    
+
+    //showNode( list );
+
     return 0;
 }

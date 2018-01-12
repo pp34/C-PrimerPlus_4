@@ -32,6 +32,14 @@ void showNum( sales_data *item ){
     std::cout << "No.: " << item->num << std::endl;
 }
 
+void showItem( sales_data *item ){
+    showNum( item );
+    showIsbn( item );
+    showTotal( item );
+    showSellout( item );
+    showPrice( item );
+}
+
 unsigned int str2uint( std::string str ){
     std::istringstream tmpstr{ str };
     unsigned int result{ 0 };

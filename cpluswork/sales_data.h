@@ -33,6 +33,7 @@ void showTotal( sales_data *item );
 void showSellout( sales_data *item );
 void showPrice( sales_data *item );
 void showNum( sales_data *item );
+void showItem( sales_data *item );
 
 unsigned int str2uint( std::string str );
 double str2double( std::string str );

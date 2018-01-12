@@ -3,12 +3,18 @@
 
 #include<iostream>
 #include<string>
+#include<typeinfo>
 #include "sales_data.h"
 #include "sales_record.h"
+
+
 
 sales_data* creatNode( sales_data *node_head, std::string str, unsigned int total,
     unsigned int sellout, double price );
 sales_data* removeNode( sales_data *node_head, int num );
+sales_data* findNode( sales_data* node_head, std::string para );
+sales_data* findNode( sales_data* node_head, int para );
+sales_data* findNode( sales_data* node_head, double para );
 void showNode( sales_data *node_head );
 
 #endif
