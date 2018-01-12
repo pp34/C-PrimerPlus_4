@@ -10,6 +10,14 @@ int main(){
     //fin.open( "SalesRecords.txt", std::ios::in );
     //readRecord( fin );
     //fin.close();
-
+    sales_data *list = nullptr;
+    list = creatNode( list );
+    showNode( list );
+    list = creatNode( list );
+    showNode( list );
+    list = creatNode( list );
+    showNode( list );
+    list = creatNode( list );
+    showNode( list );
     return 0;
 }

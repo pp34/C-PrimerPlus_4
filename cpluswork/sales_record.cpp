@@ -4,7 +4,7 @@ void readRecord( std::fstream &fin ){
     int i{0};
     unsigned int num[3]{ 0 };
     std::string tmp; 
-
+    sales_data *item=nullptr;
     skipTitle( fin );
     for ( i = 0; i < 20; i++ )
     {
