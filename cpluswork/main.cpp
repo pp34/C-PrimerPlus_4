@@ -16,7 +16,10 @@ int main(){
     fin.open( "SalesRecords.txt", std::ios::in );
     list = readRecord( fin, list );
     fin.close();
-    
+    i=lengthNode( list );
+    std::cout << i << std::endl;
+
+
     showNode( list );
     do
     {

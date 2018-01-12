@@ -15,6 +15,9 @@ sales_data* removeNode( sales_data *node_head, int num );
 sales_data* findNode( sales_data* node_head, std::string para );
 sales_data* findNode( sales_data* node_head, int para );
 sales_data* findNode( sales_data* node_head, double para );
+int lengthNode( sales_data* node_head );
+sales_data* sortNode( sales_data* node_head );
+
 void showNode( sales_data *node_head );
 
 #endif

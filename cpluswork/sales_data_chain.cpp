@@ -1,5 +1,22 @@
 #include "sales_data_chain.h"
 
+int lengthNode( sales_data* node_head ){
+    int i{0};
+    sales_data *ptmp=nullptr;
+    ptmp = node_head;
+    while(ptmp!=nullptr){
+        ptmp = ptmp->next;
+        i++;
+    }
+    return i;
+}
+
+
+sales_data* sortNode( sales_data* node_head ){
+
+    return node_head;
+}
+
 
 sales_data* findNode( sales_data* node_head, std::string para ) {
 
