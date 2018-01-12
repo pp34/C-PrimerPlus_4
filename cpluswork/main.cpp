@@ -7,6 +7,7 @@
 
 int main(){
 
+    int i{ 0 };
     sales_data *list = nullptr;
     std::fstream fin;
 
@@ -15,6 +16,10 @@ int main(){
     fin.close();
     
     showNode( list );
-
+    for ( i = 2; i < 20; i += 2 )
+    {
+        list = removeNode( list, i );
+    }
+    showNode( list );
     return 0;
 }

@@ -8,6 +8,7 @@
 
 sales_data* creatNode( sales_data *node_head, std::string str, unsigned int total,
     unsigned int sellout, double price );
+sales_data* removeNode( sales_data *node_head, int num );
 void showNode( sales_data *node_head );
 
 #endif
