@@ -7,7 +7,8 @@
 
 int main(){
 
-    int i{ 0 };
+    int i{ 0 }, length{ 0 };
+    double *p;
     std::string isbn;
     sales_data *list = nullptr;
     sales_data *fptr = nullptr;
@@ -16,12 +17,14 @@ int main(){
     fin.open( "SalesRecords.txt", std::ios::in );
     list = readRecord( fin, list );
     fin.close();
-    i=lengthNode( list );
-    std::cout << i << std::endl;
+    
+    length = lengthNode( list );
+
+    sortPrice( list );
 
 
     showNode( list );
-    do
+    /*do
     {
         std::cout << "which num U wanna find out? _\b";
         std::cin >> i;
@@ -40,10 +43,10 @@ int main(){
         std::cin >> i;
         list = removeNode( list, i );
         showNode( list );
-    } while ( i );
+    } while ( i );*/
     
-
-    //showNode( list );
+   // list = sortNode( list );
+   // showNode( list );
 
     return 0;
 }

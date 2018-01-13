@@ -146,22 +146,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="3_7_3.cpp" />
-    <ClCompile Include="4_13.cpp" />
+    <ClCompile Include="bubble_sort.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="sales_record.cpp" />
     <ClCompile Include="sales_data.cpp" />
     <ClCompile Include="sales_data_chain.cpp" />
-    <ClCompile Include="typename.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="3_7_3.h" />
-    <ClInclude Include="4_13.h" />
+    <ClInclude Include="bubble_sort.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="sales_record.h" />
     <ClInclude Include="sales_data.h" />
     <ClInclude Include="sales_data_chain.h" />
-    <ClInclude Include="typename.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="SalesRecords.txt" />

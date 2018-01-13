@@ -15,28 +15,28 @@ sales_data* readRecord( std::fstream &fin , sales_data *list ){
     {
         tmp = getId( fin );
         isbn = tmp;
-        std::cout << tmp;
-        std::cout << '\n';
+        //std::cout << tmp;
+        //std::cout << '\n';
 
         tmp = getTotal( fin );
         total = str2uint(tmp);
-        std::cout << tmp;
-        std::cout << '\t';
-       // std::cout << total << std::endl;
+        //std::cout << tmp;
+        //std::cout << '\t';
+        //std::cout << total << std::endl;
 
         tmp = getSellout( fin );
         sellout = str2uint( tmp );
-        std::cout << tmp;
-        std::cout << '\t';
-       // std::cout << sellout << std::endl;
+        //std::cout << tmp;
+        //std::cout << '\t';
+        //std::cout << sellout << std::endl;
 
         tmp = getPrice( fin );
         price = str2double( tmp );
-        std::cout << tmp;
-       // std::cout << '\t';
-       // std::cout << price << std::endl;
+        //std::cout << tmp;
+        //std::cout << '\t';
+        //std::cout << price << std::endl;
 
-        std::cout << '\n';
+        //std::cout << '\n';
         list = creatNode( list , isbn , total , sellout , price );
     }
     return list;

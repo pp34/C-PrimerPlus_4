@@ -11,8 +11,21 @@ int lengthNode( sales_data* node_head ){
     return i;
 }
 
-
 sales_data* sortNode( sales_data* node_head ){
+
+    double pricemax{ 0.0 };
+    int nodelength{ 0 };
+    int cnt{0};
+    sales_data *p0 = nullptr, *p1 = nullptr, *tmp = nullptr;
+    p0 = node_head;
+    pricemax = p0->price;
+    tmp = p0;
+
+    if ( node_head == nullptr ) { 
+        std::cout << "Error: the head pointer is nullptr! no list in here to sort." << std::endl;
+        return nullptr; 
+    }
+    nodelength = lengthNode( node_head );
 
     return node_head;
 }
@@ -40,6 +53,7 @@ sales_data* findNode( sales_data* node_head, std::string para ) {
         if ( ptmp == nullptr )
         {
             std::cout << "The ISBN which U input is wrong." << std::endl;
+            return ptmp;
         }
         else
         {
@@ -109,6 +123,7 @@ sales_data* findNode( sales_data* node_head, int para ) {
     if ( ptmp == nullptr )
     {
         std::cout << "The number which U input is wrong." << std::endl;
+        return ptmp;
     }
     else
     {
@@ -139,6 +154,7 @@ sales_data* findNode( sales_data* node_head, double para ) {
     if ( ptmp == nullptr )
     {
         std::cout << "The price which U input is wrong." << std::endl;
+        return ptmp;
     }
     else
     {

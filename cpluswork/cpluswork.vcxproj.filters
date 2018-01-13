@@ -18,15 +18,6 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="3_7_3.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="4_13.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="typename.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="sales_data.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -36,18 +27,12 @@
     <ClCompile Include="sales_record.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="bubble_sort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="3_7_3.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="4_13.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="typename.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="sales_data.h">
@@ -57,6 +42,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="sales_record.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bubble_sort.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
